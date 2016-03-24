@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<monframework-config>
+    <actions>
+        <action>
+            <action-name>fr.afcepf.al26.framework.client.MonActionHello</action-name>
+            <url-pattern>/monAction.perform</url-pattern>
+            <form-name>actionExecute</form-name>
+        </action>
+    </actions>
+    <forms>
+        <form>
+            <form-name>actionExecute</form-name>
+            <form-class>fr.afcepf.al26.framework.client.MonActionFormHello</form-class>
+        </form>
+    </forms>
+</monframework-config>
