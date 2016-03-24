@@ -13,11 +13,26 @@
 <body>
 <form action="monAction.perform" method="post">
     <fieldset>
-        <legend>name</legend>
-        <input type="text" name="name" value="${name}"/>
+        <legend>Personne</legend>
+        <div>
+            <label>Name : </label>
+            <input type="text" name="name" value="${name}"/>
+            <label>Age : </label>
+            <input type="number" name="number" value="${number}"/>
+        </div>
+        <div>
+            <label>Numero : </label>
+            <input type="number" name="adresse.numero" value="${adresse.numero}"/>
+            <label>Rue : </label>
+            <input type="text" name="adresse.rue" value="${adresse.rue}"/>
+        </div>
         <input type="submit" value="GO"/>
     </fieldset>
-    ${actionExecute.message }
+    <fieldset>
+        <legend>Reponse</legend>
+        <div>${actionExecute.message }</div>
+        <div>${actionExecute.messageAdresse }</div>
+    </fieldset>
 </form>
 </body>
 </html>
