@@ -2,6 +2,7 @@ package fr.afcepf.al26.framework.client;
 
 import fr.afcepf.al26.framework.action.MonActionForm;
 import fr.afcepf.al26.framework.entity.Adresse;
+import fr.afcepf.al26.framework.entity.Ville;
 
 import java.util.Date;
 
@@ -14,6 +15,11 @@ public class MonActionFormHello extends MonActionForm {
     private String message;
     private String messageAdresse;
     private Adresse adresse = new Adresse();
+
+    public MonActionFormHello()
+    {
+        adresse.setVille(new Ville());
+    }
 
     public int getNumber() {
         return number;
@@ -54,4 +60,5 @@ public class MonActionFormHello extends MonActionForm {
     public void setMessageAdresse(String paramMessageAdresse) {
         messageAdresse = paramMessageAdresse;
     }
+
 }

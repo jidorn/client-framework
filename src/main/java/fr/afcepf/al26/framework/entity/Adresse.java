@@ -6,6 +6,13 @@ package fr.afcepf.al26.framework.entity;
 public class Adresse {
     private int numero;
     private String rue;
+    private Ville ville;
+
+    public Adresse(int paramNumero, String paramRue, Ville paramVille) {
+        numero = paramNumero;
+        rue = paramRue;
+        ville = paramVille;
+    }
 
     public Adresse(int paramNumero, String paramRue) {
         numero = paramNumero;
@@ -31,11 +38,20 @@ public class Adresse {
         rue = paramRue;
     }
 
+    public Ville getVille() {
+        return ville;
+    }
+
+    public void setVille(Ville paramVille) {
+        ville = paramVille;
+    }
+
     @Override
     public String toString() {
         return "Adresse{" +
                 "numero=" + numero +
                 ", rue='" + rue + '\'' +
+                ", ville=" + ville +
                 '}';
     }
 }

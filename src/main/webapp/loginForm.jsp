@@ -26,6 +26,12 @@
             <label>Rue : </label>
             <input type="text" name="adresse.rue" value="${adresse.rue}"/>
         </div>
+        <div>
+            <label>Ville : </label>
+            <input type="text" name="adresse.ville.name" value="${adresse.ville.name}"/>
+            <label>testVille : </label>
+            <input type="text" name="adresse.ville.test" value="${adresse.ville.test}"/>
+        </div>
         <input type="submit" value="GO"/>
     </fieldset>
     <fieldset>

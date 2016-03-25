@@ -22,7 +22,8 @@ public class MonActionHello extends MonAction {
         String message = "Bonjour " + name+" le number :"
                 +test;
         monForm.setMessage(message);
-        String message2 = ""+monForm.getAdresse().getNumero()+" "+monForm.getAdresse().getRue();
+        String message2 = "numero : "+monForm.getAdresse().getNumero()+", rue : "+monForm.getAdresse().getRue()
+                +", nomVille : "+monForm.getAdresse().getVille().getName()+", testVille : "+monForm.getAdresse().getVille().getTest();
         monForm.setMessageAdresse(message2);
         return "";
     }
